@@ -1,7 +1,9 @@
 <nav>
     <!-- Навигационное меню -->
+    <a href="http://127.0.0.1:8000/">Домашняя Страница</a>
+    <p></p>
     <a href="{% url 'tasks:index' %}">Приложение tasks</a>
     <p></p>
-    <a href="http://127.0.0.1:8000/q/">Приложение quality_control</a>
+    <a href="{% url 'quality_control:index' %}">Приложение quality_control</a>
     <!-- Другие ссылки -->
 </nav>

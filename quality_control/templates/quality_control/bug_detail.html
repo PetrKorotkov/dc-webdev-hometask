@@ -1,0 +1,7 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+    <h1>{{ bug.title }}</h1>
+    <p>Описание: {{ bug.description }}</p>
+    <p>В проекте: {{ bug.project }}</p>
+{% endblock %}
