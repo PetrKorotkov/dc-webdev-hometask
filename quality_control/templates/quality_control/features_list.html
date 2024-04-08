@@ -2,6 +2,10 @@
 
 {% block content %}
     <h1>Список запросов на улучшение</h1>
+
+    <!-- Ссылка на создание нового запроса на улучшение -->
+    <p><a href="{% url 'quality_control:create_featurerequest' %}">Создать новый запрос на улучшение</a></p>
+    
     <ul>
         {% for feature in features_list %}
             <li><a href="{% url 'quality_control:feature_detail' feature.id %}">{{ feature.title }}</a></li>
